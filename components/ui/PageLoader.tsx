@@ -29,10 +29,10 @@ export default function PageLoader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-[200] bg-[#0d0d0d] flex flex-col items-center justify-center"
+          className="fixed inset-0 z-200 bg-charcoal flex flex-col items-center justify-center"
         >
           {/* Gold top rule */}
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#C9A96E] to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-linear-to-r from-transparent via-[#C9A96E] to-transparent" />
 
           {/* Brand */}
           <motion.div
@@ -42,7 +42,10 @@ export default function PageLoader() {
             className="text-center mb-16"
           >
             <div className="mb-3">
-              <span className="font-display text-5xl tracking-[0.15em] uppercase text-[#C9A96E]" style={{ fontStyle: "italic" }}>
+              <span
+                className="font-display text-5xl tracking-[0.15em] uppercase text-[#C9A96E]"
+                style={{ fontStyle: "italic" }}
+              >
                 Bijoux
               </span>
               <span className="font-display text-5xl tracking-[0.15em] uppercase text-white">
@@ -58,7 +61,12 @@ export default function PageLoader() {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.2, type: "spring", bounce: 0.3 }}
+            transition={{
+              duration: 0.7,
+              delay: 0.2,
+              type: "spring",
+              bounce: 0.3,
+            }}
             className="relative mb-16"
           >
             <motion.div
@@ -94,14 +102,16 @@ export default function PageLoader() {
           >
             <div className="h-px bg-white/8 w-full rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-[#A0823F] via-[#C9A96E] to-[#E8D5B0]"
+                className="h-full bg-linear-to-r from-[#A0823F] via-[#C9A96E] to-[#E8D5B0]"
                 initial={{ width: "0%" }}
                 animate={{ width: `${Math.min(progress, 100)}%` }}
                 transition={{ ease: "linear" }}
               />
             </div>
             <div className="flex justify-between mt-3">
-              <span className="font-body text-[9px] tracking-[0.3em] uppercase text-white/15">Chargement</span>
+              <span className="font-body text-[9px] tracking-[0.3em] uppercase text-white/15">
+                Chargement
+              </span>
               <span className="font-body text-[9px] text-white/20 tabular-nums">
                 {Math.min(Math.round(progress), 100)}%
               </span>
@@ -109,7 +119,7 @@ export default function PageLoader() {
           </motion.div>
 
           {/* Gold bottom rule */}
-          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#C9A96E] to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-linear-to-r from-transparent via-[#C9A96E] to-transparent" />
         </motion.div>
       )}
     </AnimatePresence>
