@@ -5,8 +5,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-black?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 
 **Auric Silence** is a premium, high-converting landing page designed for an exclusive jewelry box collection. It embodies a design philosophy where luxury is expressed through restraint, negative space, and meticulous craftsmanship.
+<img width="1215" height="1295" alt="image_mockups" src="https://github.com/user-attachments/assets/6a3c8abb-0a9a-46fa-9135-e3f20fd15e35" />
 
-![Project Preview](./public/images/preview.png)
 
 ---
 
