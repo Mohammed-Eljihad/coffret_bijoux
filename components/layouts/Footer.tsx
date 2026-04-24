@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-body text-sm text-white/40 leading-relaxed max-w-[280px]">
-              L'art du rangement luxueux. Des coffrets conçus pour protéger ce
+              L&apos;art du rangement luxueux. Des coffrets conçus pour protéger ce
               que vous avez de plus précieux.
             </p>
             <div className="flex gap-4 mt-8">

@@ -19,6 +19,7 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
   const [selected, setSelected] = useState<ProductVariant>(variants[0]);
   const [qty, setQty] = useState(1);
   const [form, setForm] = useState({ name: "", email: "", phone: "", address: "" });
+  const orderNumber = useState(() => "#BE24" + Math.floor(Math.random() * 9000 + 1000))[0];
 
   const price = 89;
   const originalPrice = 119;
@@ -297,7 +298,7 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
 
                     <div className="grid grid-cols-3 gap-4 mb-10">
                       {[
-                        { label: "Commande", value: "#BE24" + Math.floor(Math.random() * 9000 + 1000) },
+                        { label: "Commande", value: orderNumber },
                         { label: "Coloris", value: selected.label },
                         { label: "Total", value: `${price * qty}€` },
                       ].map((item, i) => (

@@ -114,7 +114,7 @@ export default function ProductDetails() {
               transition={{ delay: 0.2 }}
               className="font-body text-base text-charcoal/50 leading-relaxed mb-12 max-w-[400px]"
             >
-              L'intérieur de nos coffrets est pensé comme un appartement pour
+              L&apos;intérieur de nos coffrets est pensé comme un appartement pour
               vos bijoux — chaque pièce trouve sa place naturellement.
             </motion.p>
 
